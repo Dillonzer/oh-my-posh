@@ -6,7 +6,7 @@
       "newline": true,
       "segments": [
         {
-          "background": "#ede65c",
+          "background": "#fec810",
           "foreground": "#000000",
           "properties": {
             "alpine": "\uf300",
@@ -23,7 +23,7 @@
             "opensuse": "\uf314",
             "raspbian": "\uf315",
             "ubuntu": "\uf31c",
-            "windows": "\ue70f"
+            "windows": "\udb81\udc1d"
           },
           "style": "diamond",
           "leading_diamond": "\u256d\u2500\ue0b2",
@@ -31,7 +31,7 @@
           "type": "os"
         },
         {
-          "background": "#0087af",
+          "background": "#0196da",
           "foreground": "#f2f3f8",
           "properties": {
             "style": "agnoster_short",
@@ -87,7 +87,16 @@
           "type": "executiontime"
         },
         {
-          "background": "#01aed5",
+					"background": "#fec810",
+					"foreground": "#100e23",
+          "invert_powerline": true,
+          "style": "powerline",
+          "powerline_symbol": "\ue0b2",
+          "template": " \uf007 {{ .UserName }} ",
+					"type": "session"
+				},
+        {
+          "background": "#0196da",
           "foreground": "#f2f3f8",
           "properties": {
             "time_format": "03:04 PM"
@@ -106,7 +115,7 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#ede65c",
+          "foreground": "#fec810",
           "style": "plain",
           "template": "\u2570\u2500 {{ if .Root }}#{{else}}${{end}}",
           "type": "text"
