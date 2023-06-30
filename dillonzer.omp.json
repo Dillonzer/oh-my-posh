@@ -6,8 +6,8 @@
       "newline": true,
       "segments": [
         {
-          "background": "#d75f00",
-          "foreground": "#f2f3f8",
+          "background": "#ede65c",
+          "foreground": "#000000",
           "properties": {
             "alpine": "\uf300",
             "arch": "\uf303",
@@ -29,14 +29,6 @@
           "leading_diamond": "\u256d\u2500\ue0b2",
           "template": " {{ .Icon }} ",
           "type": "os"
-        },
-        {
-          "background": "#e4e4e4",
-          "foreground": "#4e4e4e",
-          "style": "powerline",
-          "powerline_symbol": "\ue0b0",
-          "template": " {{ .UserName }} ",
-          "type": "session"
         },
         {
           "background": "#0087af",
@@ -95,14 +87,14 @@
           "type": "executiontime"
         },
         {
-          "background": "#d75f00",
+          "background": "#01aed5",
           "foreground": "#f2f3f8",
           "properties": {
-            "time_format": "15:04:05"
+            "time_format": "03:04 PM"
           },
           "invert_powerline": true,
           "style": "diamond",
-          "template": " \uf073 {{ .CurrentDate | date .Format }} ",
+          "template": " \ue641 {{ .CurrentDate | date .Format }} ",
           "trailing_diamond": "\ue0b0",
           "type": "time"
         }
@@ -114,7 +106,7 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#d75f00",
+          "foreground": "#ede65c",
           "style": "plain",
           "template": "\u2570\u2500 {{ if .Root }}#{{else}}${{end}}",
           "type": "text"
