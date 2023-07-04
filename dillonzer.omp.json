@@ -52,7 +52,7 @@
           },
           "style": "diamond",
           "leading_diamond": "\ue0b2",
-          "template": "{{ .Icon }}",
+          "template": "{{ .Icon }} ",
           "type": "os"
         },
         {
