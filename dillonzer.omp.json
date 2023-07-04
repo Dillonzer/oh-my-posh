@@ -1,6 +1,31 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "blocks": [
+      {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "background": "#2eb6f5",
+          "foreground": "#100e23",
+          "template": " ☁️ {{ .Name }}",
+          "style": "diamond",
+          "leading_diamond": " <transparent,background>\ue0b0</>",
+          "trailing_diamond": "\ue0b0",
+          "type": "az"
+        },
+        {
+          "foreground": "#100e23",
+          "background": "#ebcc34",
+          "style": "diamond",
+          "leading_diamond": " <transparent,background>\ue0b0</>",
+          "trailing_diamond": "\ue0b0",
+          "template": "\udb84\udcfe {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}}",
+          "type": "kubectl"
+        }
+      ],
+      "type": "prompt"
+    },
     {
       "alignment": "left",
       "newline": true,
@@ -26,7 +51,7 @@
             "windows": "\udb81\udc1d"
           },
           "style": "diamond",
-          "leading_diamond": "\u256d\u2500\ue0b2",
+          "leading_diamond": "\ue0b2",
           "template": " {{ .Icon }} ",
           "type": "os"
         },
@@ -92,9 +117,19 @@
           "invert_powerline": true,
           "style": "powerline",
           "powerline_symbol": "\ue0b2",
-          "template": " \uf007 {{ .UserName }} ",
+          "template": " \uf007 {{ if matchP .UserName \"/dillo/\" }}Dillon {{else}}{{ .UserName }} {{end}}@ {{ replace \"Dillon-\" \"\" .HostName }} ",
 					"type": "session"
 				},
+        {
+          "type": "node",
+          "display_mode": "always",
+          "style": "powerline",
+          "invert_powerline": true,
+          "powerline_symbol": "\ue0b2",
+          "foreground": "#ffffff",
+          "background": "#6CA35E",
+          "template": " \udb80\udf99 {{ .Full }} "
+        },
         {
           "background": "#0196da",
           "foreground": "#f2f3f8",
@@ -117,13 +152,13 @@
         {
           "foreground": "#fec810",
           "style": "plain",
-          "template": "\u2570\u2500 {{ if .Root }}#{{else}}${{end}}",
+          "template": "{{ if .Root }}# {{else}}$ {{end}}",
           "type": "text"
         }
       ],
       "type": "prompt"
     }
   ],
-  "final_space": true,
+	"final_space": false,
   "version": 2
 }
