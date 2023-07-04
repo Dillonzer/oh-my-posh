@@ -8,7 +8,7 @@
         {
           "background": "#2eb6f5",
           "foreground": "#100e23",
-          "template": " ☁️ {{ .Name }}",
+          "template": "☁️ {{ .Name }}",
           "style": "diamond",
           "leading_diamond": " <transparent,background>\ue0b0</>",
           "trailing_diamond": "\ue0b0",
