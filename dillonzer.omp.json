@@ -30,7 +30,90 @@
             "trailing_diamond": "\ue0b0",
             "foreground": "#000000",
             "background": "#0B59E7",
-            "template": " \udb82\udc68 {{ .Context }} "
+            "template": "\udb82\udc68 {{ .Context }} "
+          }
+        ],
+        "type": "prompt"         
+      },
+      {
+        "alignment": "right",
+        "segments": [
+          {
+            "type": "dotnet",
+            "style": "diamond",
+            "leading_diamond": "\ue0b7",
+            "trailing_diamond": "\ue0b5",
+            "properties": {
+              "display_mode": "files"
+            },
+            "foreground": "#ffffff",
+            "template": "\ue77f v{{ .Full }}"
+          },
+          {
+            "type": "node",
+            "style": "diamond",
+            "leading_diamond": "\ue0b7",
+            "trailing_diamond": "\ue0b5",
+            "properties": {
+              "display_mode": "files"
+            },
+            "foreground": "#ffffff",
+            "template": "\udb80\udf99 v{{ .Full }}"
+          },
+          {
+            "type": "python",
+            "style": "diamond",
+            "leading_diamond": "\ue0b7",
+            "trailing_diamond": "\ue0b5",
+            "properties": {
+              "display_mode": "files"
+            },
+            "foreground": "#ffffff",
+            "template": "\ue606 v{{ .Full }}"
+          },
+          {
+            "type": "lua",
+            "style": "diamond",
+            "leading_diamond": "\ue0b7",
+            "trailing_diamond": "\ue0b5",
+            "properties": {
+              "display_mode": "files"
+            },
+            "foreground": "#ffffff",
+            "template": "\ue620 v{{ .Full }}"
+          },
+          {
+            "type": "ruby",
+            "style": "diamond",
+            "leading_diamond": "\ue0b7",
+            "trailing_diamond": "\ue0b5",
+            "properties": {
+              "display_mode": "files"
+            },
+            "foreground": "#ffffff",
+            "template": "\ue791 v{{ .Full }}"
+          },
+          {
+            "type": "java",
+            "style": "diamond",
+            "leading_diamond": "\ue0b7",
+            "trailing_diamond": "\ue0b5",
+            "properties": {
+              "display_mode": "files"
+            },
+            "foreground": "#ffffff",
+            "template": "\udb82\udf37 v{{ .Full }}"
+          },
+          {
+            "type": "angular",
+            "style": "diamond",
+            "leading_diamond": "\ue0b7",
+            "trailing_diamond": "\ue0b5",
+            "properties": {
+              "display_mode": "files"
+            },
+            "foreground": "#ffffff",
+            "template": "\udb81\udeb2 v{{ .Full }}"
           }
         ],
         "type": "prompt"
@@ -129,16 +212,6 @@
             "template": " \uf007 {{ if matchP .UserName \"/dillo/\" }}Dillon {{else}}{{ .UserName }} {{end}}@ {{ replace \"Dillon-\" \"\" .HostName }} ",
                       "type": "session"
                   },
-          {
-            "type": "node",
-            "display_mode": "always",
-            "style": "powerline",
-            "invert_powerline": true,
-            "powerline_symbol": "\ue0b2",
-            "foreground": "#ffffff",
-            "background": "#6CA35E",
-            "template": " \udb80\udf99 {{ .Full }} "
-          },
           {
             "background": "#0196da",
             "foreground": "#f2f3f8",
