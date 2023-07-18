@@ -40,80 +40,77 @@
         "segments": [
           {
             "type": "dotnet",
-            "style": "diamond",
-            "leading_diamond": "\ue0b7",
-            "trailing_diamond": "\ue0b5",
+            "style": "plain",
             "properties": {
               "display_mode": "files"
             },
-            "foreground": "#ffffff",
-            "template": "\ue77f v{{ .Full }}"
+            "foreground": "#c36ff3",
+            "template": "\ue0b7\ue77f v{{ .Full }}\ue0b5"
           },
           {
             "type": "node",
-            "style": "diamond",
-            "leading_diamond": "\ue0b7",
-            "trailing_diamond": "\ue0b5",
+            "style": "plain",
             "properties": {
               "display_mode": "files"
             },
-            "foreground": "#ffffff",
-            "template": "\udb80\udf99 v{{ .Full }}"
+            "foreground": "#68A063",
+            "template": "\ue0b7\udb80\udf99 v{{ .Full }}\ue0b5"
           },
           {
             "type": "python",
-            "style": "diamond",
-            "leading_diamond": "\ue0b7",
-            "trailing_diamond": "\ue0b5",
+            "style": "plain",
             "properties": {
               "display_mode": "files"
             },
-            "foreground": "#ffffff",
-            "template": "\ue606 v{{ .Full }}"
+            "foreground": "#4597db",
+            "template": "\ue0b7\ue606 v{{ .Full }}\ue0b5"
           },
           {
             "type": "lua",
-            "style": "diamond",
-            "leading_diamond": "\ue0b7",
-            "trailing_diamond": "\ue0b5",
+            "style": "plain",
             "properties": {
               "display_mode": "files"
             },
-            "foreground": "#ffffff",
-            "template": "\ue620 v{{ .Full }}"
+            "foreground": "#0004ff",
+            "template": "\ue0b7\ue620 v{{ .Full }}\ue0b5"
           },
           {
             "type": "ruby",
-            "style": "diamond",
-            "leading_diamond": "\ue0b7",
-            "trailing_diamond": "\ue0b5",
+            "style": "plain",
             "properties": {
               "display_mode": "files"
             },
-            "foreground": "#ffffff",
-            "template": "\ue791 v{{ .Full }}"
+            "foreground": "#ff0000",
+            "template": "\ue0b7\ue791 v{{ .Full }}\ue0b5"
           },
           {
             "type": "java",
-            "style": "diamond",
-            "leading_diamond": "\ue0b7",
-            "trailing_diamond": "\ue0b5",
+            "style": "plain",
             "properties": {
               "display_mode": "files"
             },
-            "foreground": "#ffffff",
-            "template": "\udb82\udf37 v{{ .Full }}"
+            "foreground": "#ff7300",
+            "template": "\ue0b7\udb82\udf37 v{{ .Full }}\ue0b5"
           },
           {
             "type": "angular",
-            "style": "diamond",
-            "leading_diamond": "\ue0b7",
-            "trailing_diamond": "\ue0b5",
+            "style": "plain",
             "properties": {
               "display_mode": "files"
             },
+            "foreground": "#ff0000",
+            "template": "\ue0b7\udb81\udeb2 v{{ .Full }}\ue0b5"
+          },
+          {
+            "type": "battery",
+            "style": "plain",
             "foreground": "#ffffff",
-            "template": "\udb81\udeb2 v{{ .Full }}"
+            "template": "\ue0b7{{ if not .Error }}{{ .Icon }} {{ .Percentage }}%{{ else }}\udb85\udc25{{ end }}\ue0b5",
+            "properties": {
+              "discharging_icon": "\uf242 ",
+              "charging_icon": "\udb80\udc84 ",
+              "charged_icon": "\uf240 "
+            }
           }
         ],
         "type": "prompt"
@@ -143,7 +140,7 @@
               "windows": "\udb81\udc1d"
             },
             "style": "diamond",
-            "leading_diamond": "\ue0b2",
+            "leading_diamond": "\ue0b6",
             "template": "{{ .Icon }} ",
             "type": "os"
           },
@@ -221,7 +218,7 @@
             "invert_powerline": true,
             "style": "diamond",
             "template": " \ue641 {{ .CurrentDate | date .Format }} ",
-            "trailing_diamond": "\ue0b0",
+            "trailing_diamond": "\ue0b4",
             "type": "time"
           }
         ],
@@ -234,7 +231,7 @@
           {
             "foreground": "#fec810",
             "style": "plain",
-            "template": "{{ if .Root }}# {{else}}$ {{end}}",
+            "template": "{{ if .Root }}\uea86 {{else}}\ue683 {{end}}",
             "type": "text"
           }
         ],
