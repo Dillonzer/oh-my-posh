@@ -140,7 +140,7 @@
               "windows": "\udb81\udc1d"
             },
             "style": "diamond",
-            "leading_diamond": "\ue0b6",
+            "leading_diamond": "\ue0b2",
             "template": "{{ .Icon }} ",
             "type": "os"
           },
@@ -218,7 +218,7 @@
             "invert_powerline": true,
             "style": "diamond",
             "template": " \ue641 {{ .CurrentDate | date .Format }} ",
-            "trailing_diamond": "\ue0b4",
+            "trailing_diamond": "\ue0b0",
             "type": "time"
           }
         ],
