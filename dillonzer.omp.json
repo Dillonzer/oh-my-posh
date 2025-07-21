@@ -172,7 +172,7 @@
             "invert_powerline": true,
             "style": "powerline",
             "powerline_symbol": "\ue0b2",
-            "template": " \uf007 {{ if matchP .UserName \"/dillo/\" }}Dillon {{else}}{{ .UserName }} {{end}}@ {{ replace \"Dillon-\" \"\" .HostName }} ",
+            "template": " \uf007 {{ if matchP .UserName \"/dillo/\" }}Dillon {{else}}{{ .UserName }} {{end}}@ {{ replace \"Dillons-\" \"\" .HostName }} ",
                       "type": "session"
                   },
           {
