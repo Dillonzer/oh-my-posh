@@ -38,7 +38,7 @@
                     "fetch_virtual_env": true,
                     "home_enabled": true
                 },
-                "template": "{{ if .Venv }}\ue0b7\ue606{{ .Venv }}\ue0b5{{ end }} ",
+                "template": "{{ if .Venv }}\ue0b7\ue606 {{ .Venv }}\ue0b5{{ end }} ",
                 "type": "python"
             },
           {
