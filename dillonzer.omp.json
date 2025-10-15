@@ -32,16 +32,13 @@
             "template": "\ue0b7\ue606 v{{ .Full }}\ue0b5"
           },
           {
-                "background": "#FFDE57",
-                "foreground": "#111111",
-                "powerline_symbol": "\ue0b0",
+                "foreground": "#4597db",
                 "properties": {
                     "display_mode": "environment",
                     "fetch_virtual_env": true,
                     "home_enabled": true
                 },
-                "style": "powerline",
-                "template": "\ue235 {{ if .Venv }}({{ .Venv }}){{ end }} ",
+                "template": "{{ if .Venv }}\ue0b7\ue606{{ .Venv }}\ue0b5{{ end }} ",
                 "type": "python"
             },
           {
